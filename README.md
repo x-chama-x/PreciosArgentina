@@ -26,7 +26,7 @@ obtenerPrecioDisney
 - Esta función obtiene el precio de suscripción de Disney+ desde su sitio web. Si no se puede extraer un precio válido, se utiliza cero como valor por defecto.
 
 ## Manejo de Errores
-- En caso de que ocurra un error durante la extracción del precio, se captura el error y se utiliza un valor por defecto de 1599.
+- En caso de que ocurra un error durante la extracción del precio, se captura el error y se utiliza cero como valor por defecto.
 
 ![alt text](image.png)
 
