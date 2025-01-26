@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Precios Actualizados - Dólar y Streaming</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Precios Actualizados en Argentina</h1>
+        
+        <section>
+            <h2>Cotización del Dólar</h2>
+            <div class="price-box">
+                <h3>Dólar Oficial</h3>
+                <p>Compra: <span class="price" id="dolar-oficial-compra">$0.00</span></p>
+                <p>Venta: <span class="price" id="dolar-oficial-venta">$0.00</span></p>
+            </div>
+            <div class="price-box">
+                <h3>Dólar Blue</h3>
+                <p>Compra: <span class="price" id="dolar-blue-compra">$0.00</span></p>
+                <p>Venta: <span class="price" id="dolar-blue-venta">$0.00</span></p>
+            </div>
+        </section>
+        
+        <section>
+            <h2>Servicios de Streaming</h2>
+            <div class="price-box">
+                <h3>Netflix</h3>
+                <p>Precio: <span class="price" id="precio-netflix">$0.00</span></p>
+            </div>
+            <div class="price-box">
+                <h3>MAX</h3>
+                <p>Precio: <span class="price" id="precio-max">$0.00</span></p>
+            </div>
+            <div class="price-box">
+                <h3>Disney+</h3>
+                <p>Precio: <span class="price" id="precio-disney">$0.00</span></p>
+            </div>
+            <div class="price-box">
+                <h3>Amazon Prime</h3>
+                <p>Precio: <span class="price" id="precio-amazon">$0.00</span></p>
+            </div>
+        </section>
+    </div>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/main.js"></script>
+</body>
+</html>
+
