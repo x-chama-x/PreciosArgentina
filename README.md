@@ -28,4 +28,5 @@ obtenerPrecioDisney
 ## Manejo de Errores
 - En caso de que ocurra un error durante la extracción del precio, se captura el error y se utiliza un valor por defecto de 1599.
 
+![alt text](image.png)
 
