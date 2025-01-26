@@ -18,10 +18,10 @@ Este proyecto utiliza las siguientes dependencias:
 
 ## Funciones Principales
 
-# obtenerPrecioPrimeVideo
+## obtenerPrecioPrimeVideo
 - Esta función obtiene el precio de suscripción de Prime Video desde su sitio web. Si no se puede extraer un precio válido, se utiliza un valor por defecto de 1599.
 
-# obtenerPrecioDisney
+## obtenerPrecioDisney
 - Esta función obtiene el precio de suscripción de Disney+ desde su sitio web. Si no se puede extraer un precio válido, se utiliza un valor por defecto de 1599.
 
 ## Manejo de Errores
