@@ -1,6 +1,6 @@
 # Proyecto de Extracción de Precios de Servicios de Streaming
 
-Este proyecto tiene como objetivo extraer los precios de suscripción de diferentes servicios de streaming como Prime Video y Disney+ utilizando web scraping y además
+Este proyecto tiene como objetivo extraer los precios de suscripción de diferentes servicios de streaming (EN TIEMPO REAL) como Prime Video y Disney+ utilizando web scraping y además
 extraer el valor del dolar y el dolar BLUE en Argetina.
 
 ## Requisitos
