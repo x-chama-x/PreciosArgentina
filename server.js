@@ -130,42 +130,42 @@ async function obtenerPrecioPrimeVideo() {
 
 async function obtenerPrecioDisney() {
   try {
-    const url = "https://www.disneyplus.com/es-ar"
-    const { data } = await axios.get(url)
-    const $ = cheerio.load(data)
+    const url = "https://www.disneyplus.com/es-ar";
+    const { data } = await axios.get(url);
+    const $ = cheerio.load(data);
 
     // Buscar el elemento que contiene el precio usando múltiples selectores
     const precioElement = $('p:contains("ARS"), span:contains("ARS"), div:contains("ARS")')
       .filter(function () {
         return $(this)
           .text()
-          .match(/ARS\s*[\d.,]+/)
+          .match(/ARS\s*[\d.,]+/);
       })
-      .first()
+      .first();
 
     if (precioElement.length) {
-      const precioTexto = precioElement.text().trim()
+      const precioTexto = precioElement.text().trim();
 
       // Extraer el número del texto usando una expresión regular más flexible
-      const precioMatch = precioTexto.match(/ARS\s*([\d.,]+)/)
+      const precioMatch = precioTexto.match(/ARS\s*([\d.,]+)/);
 
       if (precioMatch) {
         // Limpiar el precio y convertirlo a número
-        const precioLimpio = precioMatch[1].replace(/[.,]/g, "")
-        const precio = Number.parseInt(precioLimpio)
+        const precioLimpio = precioMatch[1].replace(/[.,]/g, "");
+        const precio = Number.parseInt(precioLimpio);
 
         if (!isNaN(precio) && precio > 0 && precio < 1000000) {
-          // Formatear el precio como $10.699
-          return `$${precio}`
+          // Devolver solo el número sin el signo de dólar
+          return precio;
         }
       }
     }
 
-    console.log("No se pudo extraer un precio válido de Disney+, usando valor por defecto")
-    return "$0" // Valor por defecto formateado
+    console.log("No se pudo extraer un precio válido de Disney+, usando valor por defecto");
+    return 0; // Valor por defecto como número
   } catch (error) {
-    console.error("Error al obtener el precio de Disney+:", error)
-    return "$0" // Valor por defecto formateado si hay un error
+    console.error("Error al obtener el precio de Disney+:", error);
+    return 0; // Valor por defecto como número si hay un error
   }
 }
 

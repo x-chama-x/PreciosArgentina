@@ -28,5 +28,5 @@ obtenerPrecioDisney
 ## Manejo de Errores
 - En caso de que ocurra un error durante la extracción del precio, se captura el error y se utiliza cero como valor por defecto.
 
-![alt text](image.png)
+![alt text](image-1.png)
 
