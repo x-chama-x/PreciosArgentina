@@ -1,6 +1,6 @@
 # Proyecto de Extracción de Precios de Servicios de Streaming
 
-Este proyecto tiene como objetivo extraer los precios de suscripción de diferentes servicios de streaming (EN TIEMPO REAL) como Prime Video y Disney+ utilizando web scraping y además
+Este proyecto tiene como objetivo extraer los precios del plan básico/estandar de suscripción de diferentes servicios de streaming (EN TIEMPO REAL) como Prime Video y Disney+ utilizando web scraping y además
 extraer el valor del dolar y el dolar BLUE en Argetina.
 
 ## Requisitos
@@ -28,5 +28,4 @@ obtenerPrecioDisney
 ## Manejo de Errores
 - En caso de que ocurra un error durante la extracción del precio, se captura el error y se utiliza cero como valor por defecto.
 
-![alt text](image-1.png)
-
+![alt text](image-2.png)
