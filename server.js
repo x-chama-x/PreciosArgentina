@@ -26,7 +26,7 @@ app.get("/", (req, res) => {
 // funcion para obtener el precio del dolar 
 async function obtenerPreciosDolar() {
   try {
-    const response = await axios.get("https://api.bluelytics.com.ar/v2/latest")
+    const response = await axios.get("https://api.bluelytics.com.ar/v2/latest") // Hacer una petición GET a la API
     const data = response.data
     return {
       oficial: {
@@ -39,7 +39,7 @@ async function obtenerPreciosDolar() {
       },
     }
   } catch (error) {
-    console.error("Error al obtener precios del dólar:", error)
+    console.error("Error al obtener precios del dólar:", error) // si hay un error, mostrarlo en la consola
     return null
   }
 }
