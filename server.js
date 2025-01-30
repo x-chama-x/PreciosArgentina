@@ -171,15 +171,16 @@ async function obtenerPrecioDisney() {
 
 // Función para obtener los precios de los servicios de streaming
 async function obtenerPreciosStreaming() {
+  const valorDefault = 0;
   const precioNetflix = await obtenerPrecioNetflix();
   const precioMax = await obtenerPrecioMax();
   const precioAmazon = await obtenerPrecioPrimeVideo();
   const precioDisney = await obtenerPrecioDisney();
   return {
-    netflix: precioNetflix || 3990, // Valor por defecto si hay un error
-    max: precioMax || 2990, // Valor por defecto si hay un error
-    disney : precioDisney || 3500, // Valor por defecto si hay un error
-    amazon: precioAmazon || 1599, // Valor por defecto si hay un error
+    netflix: precioNetflix || valorDefault, 
+    max: precioMax || valorDefault, 
+    disney : precioDisney || valorDefault, 
+    amazon: precioAmazon || valorDefault, 
   };
 }
 
